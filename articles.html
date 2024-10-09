@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="CSS/articles-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <title>LINGORM</title>
+    <title>LINGORM | ARTICLES</title>
 </head>
 <body>
     <header class="header-wallpaper-sub">
@@ -29,13 +29,13 @@
                     <li class="dropdown">
                         <a href="live-count.html">Live Count</a>
                         <div class="dropdown-content">
-                            <a href="TSOU-live-count.html">The Secret of Us</a>
+                            <a href="live-count/TSOU-live-count.html">The Secret of Us</a>
                         </div>
                     </li>
                     <li class="dropdown">
                         <a href="#">Fan Meeting</a>
                         <div class="dropdown-content">
-                            <a href="FM2024.html">2024</a>
+                            <a href="fanmeeting/2024.html">2024</a>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -52,8 +52,6 @@
                 </ul>
             </nav>
         </div>
-       
-        
     </header>
     
     <main>
@@ -198,11 +196,11 @@
         paginationLinks[activePage - 1].classList.add('active');
     }
 
-    // Initialize pagination on page load
-    showPage(1);
-    createPagination();
-
-            //hamburger for only display at mobile devices
+        // Initialize pagination on page load
+        showPage(1);
+        createPagination();
+            
+          //hamburger for only display at mobile devices
         document.querySelector('.nav-toggle').addEventListener('click', function() {
         document.querySelector('nav ul').classList.toggle('showing');
         });
