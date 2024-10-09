@@ -133,6 +133,20 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better readabilit
 font-size: 100px; /* Adjust font size */
 }
 
+/* Adjust font size for tablets */
+@media (max-width: 768px) {
+.bottom-left-text {
+font-size: 50px; /* Smaller font size for tablets */
+}
+}
+
+/* Adjust font size for mobile phones */
+@media (max-width: 480px) {
+.bottom-left-text {
+font-size: 30px; /* Even smaller font size for mobile phones */
+}
+}
+
 /* Additional styling for responsiveness */
 @media (max-width: 768px) {
 .nav-toggle {
