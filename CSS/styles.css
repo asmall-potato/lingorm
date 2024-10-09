@@ -86,6 +86,14 @@ nav ul li a:hover {
 text-decoration: underline;
 }
 
+.nav-toggle {
+display: none;
+background: none;
+border: none;
+font-size: 24px;
+cursor: pointer;
+}
+
 /* Dropdown styles */
 .dropdown-content {
 display: none;
@@ -301,7 +309,7 @@ transition: background-color 0.3s; /* Smooth background change */
 }
 
 .button:hover {
-background-color: #555; /* Darken background on hover */
+background-color: #555; /*/* Darken background on hover */
 }
 
 .section5 {
@@ -478,3 +486,4 @@ position: relative;
 bottom: 0;
 width: 100%;
 }
+  
