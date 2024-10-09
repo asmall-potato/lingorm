@@ -136,6 +136,22 @@ nav ul li a:hover {
     }
 }
 
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    .left-image, .right-image, .middle-text {
+        flex: 100%; /* Allow them to take full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .bottom-left-text {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+}
+
+
 /*
 .scroll-reveal {
     padding: 20px; /* Add padding around sections 
