@@ -52,7 +52,13 @@ body {
     background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent initially */
     transition: background-color 0.3s;
 }
-
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 8px 0; /* Reduce padding on smaller screens */
+        font-size: 0.9em; /* Slightly smaller font size */
+    }
+}
 .logo {
     margin: 0;
     font-size: 24px;
