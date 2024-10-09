@@ -1,3 +1,20 @@
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container to center everything */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make sure the container takes the full height of the viewport */
+    margin: 0;
+}
+
+/* Flex container for general items */
 .general-container {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
@@ -6,6 +23,7 @@
     padding: 20px; /* Adds some padding around the container */
 }
 
+/* Each individual item */
 .general-item {
     border: 1px solid #ccc;
     padding: 20px;
@@ -15,7 +33,6 @@
     background-color: #fff; /* Background color for visibility */
     border-radius: 10px; /* Optional: adds rounded corners to the item */
     overflow: hidden; /* Ensures that overflow content is hidden */
-   
 }
 
 h4 {
@@ -29,6 +46,7 @@ button {
     cursor: pointer;
 }
 
+/* Ensure images inside .general-item are centered and fit */
 .general-item img {
     max-width: 100%; /* Ensures the image scales to fit the width of the container */
     height: auto; /* Maintains aspect ratio */
@@ -38,17 +56,20 @@ button {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
 }
 
+/* Instagram embed styling */
 .instagram-media {
     max-width: 100%; /* Ensure the Instagram embed takes up 100% of the container width */
     height: 100%; /* Set it to fill the container's height */
 }
 
+/* Ensures iframes are centered */
 .iframe {
     display: block;
     margin: 0 auto;  /* This centers block elements */
-  }
+}
 
-  .embed-container {
+/* Embeds general container */
+.embed-container {
     width: 300px; /* Set the width to 300px */
     height: 563.99px; /* Set the height to 563.99px */
     overflow: hidden; /* Hide any overflow */
