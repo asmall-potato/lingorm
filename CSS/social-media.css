@@ -1,54 +1,100 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif; /* Choose a more elegant font */
+line-height: 1.6;
+color: #333;
+background-color: #F5F3F1;
+}
+
 /* Container for the social media section */
 .follow-container {
-    display: flex;
-    justify-content: center; /* Center the content */
-    padding: 20px;
-    background-color: #f9f9f9; /* Light background */
+display: flex;
+justify-content: center; /* Center the content */
+padding: 20px;
+background-color: #f9f9f9; /* Light background */
 }
 
 /* The series container to align items side by side */
 .series-container {
-    display: flex;
-    gap: 20px; /* Space between columns */
-    justify-content: center; /* Align content to the center */
+display: flex;
+gap: 20px; /* Space between columns */
+justify-content: center; /* Align content to the center */
+flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 /* Individual column styling */
 .column {
-    text-align: center; /* Center text under the image */
-    max-width: 300px; /* Set max width for consistency */
-    flex: 1; /* Make the columns equally flexible */
-    background-color: #ffffff; /* White background */
-    padding: 10px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow */
+text-align: center; /* Center text under the image */
+max-width: 300px; /* Set max width for consistency */
+flex: 1; /* Make the columns equally flexible */
+background-color: #ffffff; /* White background */
+padding: 10px;
+border-radius: 8px; /* Rounded corners */
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow */
+margin: 10px; /* Add margin for spacing */
 }
 
 /* Ensure the images have consistent sizes */
 .column img {
-    width: 100%; /* Set image to full width of container */
-    height: auto; /* Keep aspect ratio */
-    max-width: 250px; /* Set a maximum width */
-    border-radius: 5px; /* Optional: Rounded corners */
-    object-fit: cover; /* Cover the container without distortion */
+width: 100%; /* Set image to full width of container */
+height: auto; /* Keep aspect ratio */
+max-width: 250px; /* Set a maximum width */
+border-radius: 5px; /* Optional: Rounded corners */
+object-fit: cover; /* Cover the container without distortion */
 }
 
 /* Styling the text and links below the image */
 .column h3 {
-    font-size: 1.2em;
-    margin-top: 10px;
+font-size: 1.2em;
+margin-top: 10px;
 }
 
 .column p {
-    font-size: 1em;
-    margin: 5px 0;
+font-size: 1em;
+margin: 5px 0;
 }
 
 .column a {
-    color: #3498db; /* Link color */
-    text-decoration: none; /* Remove underline */
+color: #3498db; /* Link color */
+text-decoration: none; /* Remove underline */
 }
 
 .column a:hover {
-    text-decoration: underline; /* Add underline on hover */
+text-decoration: underline; /* Add underline on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+.series-container {
+flex-direction: column; /* Stack columns vertically on tablets */
+align-items: center; /* Center items */
+}
+
+.column {
+max-width: 80%; /* Adjust max width for tablets */
+}
+}
+
+@media (max-width: 480px) {
+.series-container {
+flex-direction: column; /* Stack columns vertically on mobile devices */
+align-items: center; /* Center items */
+}
+
+.column {
+max-width: 100%; /* Adjust max width for mobile devices */
+}
+
+.column h3 {
+font-size: 1em; /* Adjust font size for mobile devices */
+}
+
+.column p {
+font-size: 0.9em; /* Adjust font size for mobile devices */
+}
 }
