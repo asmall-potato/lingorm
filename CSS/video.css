@@ -1,24 +1,45 @@
-
-
 .video-container {
-    display: flex;               /* Use flexbox layout */
-    flex-wrap: wrap;            /* Allow wrapping if needed */
-    justify-content: center;     /* Center items horizontally */
-    gap: 20px;                  /* Space between videos */
-    padding: 20px;              /* Padding around the container */
+display: flex;               /* Use flexbox layout */
+flex-wrap: wrap;             /* Allow wrapping if needed */
+justify-content: center;     /* Center items horizontally */
+gap: 20px;                   /* Space between videos */
+padding: 20px;               /* Padding around the container */
 }
 
 .video-item {
-    flex: 0 0 calc(33.33% - 20px); /* 33.33% width minus gap */
-    max-width: calc(33.33% - 20px); /* Ensure item doesn’t exceed this width */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-    background-color: #fff;     /* Background color for visibility */
-    border-radius: 10px;        /* Rounded corners for the video item */
-    overflow: hidden;           /* Hide overflow */
+flex: 0 0 calc(33.33% - 20px); /* 33.33% width minus gap */
+max-width: calc(33.33% - 20px); /* Ensure item doesn’t exceed this width */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+background-color: #fff;      /* Background color for visibility */
+border-radius: 10px;         /* Rounded corners for the video item */
+overflow: hidden;            /* Hide overflow */
 }
 
 .video-item iframe {
-    width: 100%;                /* Make the iframe take full width of the item */
-    height: 300px;              /* Set a fixed height */
-    border: none;               /* Remove default border */
+width: 100%;                 /* Make the iframe take full width of the item */
+height: 300px;               /* Set a fixed height */
+border: none;                /* Remove default border */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+.video-item {
+flex: 0 0 calc(50% - 20px); /* 50% width minus gap for tablets */
+max-width: calc(50% - 20px); /* Ensure item doesn’t exceed this width */
+}
+
+.video-item iframe {
+height: 250px;           /* Adjust height for tablets */
+}
+}
+
+@media (max-width: 480px) {
+.video-item {
+flex: 0 0 calc(100% - 20px); /* 100% width minus gap for mobile devices */
+max-width: calc(100% - 20px); /* Ensure item doesn’t exceed this width */
+}
+
+.video-item iframe {
+height: 200px;           /* Adjust height for mobile devices */
+}
 }
