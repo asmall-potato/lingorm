@@ -1,21 +1,21 @@
-/ Main content styles /
 .general-container {
-display: flex;
-flex-wrap: wrap; / Allows wrapping to the next line if necessary /
-justify-content: center; / Centers the items horizontally /
-gap: 20px; / Space between awards /
-padding: 20px; / Adds some padding around the container /
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Space between awards */
+    padding: 20px; /* Adds some padding around the container */
 }
 
 .general-item {
-border: 1px solid #ccc;
-padding: 20px;
-width: 300px; / Fixed width for consistency /
-text-align: center;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); / Optional shadow for depth /
-background-color: #fff; / Background color for visibility /
-border-radius: 10px; / Optional: adds rounded corners to the item /
-overflow: hidden; / Ensures that overflow content is hidden /
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px; /* Fixed width for consistency */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    background-color: #fff; /* Background color for visibility */
+    border-radius: 10px; /* Optional: adds rounded corners to the item */
+    overflow: hidden; /* Ensures that overflow content is hidden */
+   
 }
 
 h4 {
