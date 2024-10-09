@@ -39,8 +39,7 @@ button {
 }
 
 .instagram-media {
-    max-width: 100%; /* Ensure the Instagram embed takes up 100% of the container width */
-    height: 100%; /* Set it to fill the container's height */
+   min-width: 300px !important;
 }
 
 .iframe {
