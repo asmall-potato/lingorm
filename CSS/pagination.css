@@ -1,24 +1,41 @@
 .pagination {
-    margin-top: 10px;          /* Reduce gap between videos and pagination */
-    margin-bottom: 20px;       /* Adjust as needed */
-    text-align: center;         /* Center pagination links */
+margin-top: 10px;          /* Reduce gap between videos and pagination */
+margin-bottom: 20px;       /* Adjust as needed */
+text-align: center;        /* Center pagination links */
 }
 
 .pagination a {
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none;
-    border: 1px solid #ddd;
-    margin: 0 4px;
-    border-radius: 5px;
+color: black;
+padding: 8px 16px;
+text-decoration: none;
+border: 1px solid #ddd;
+margin: 0 4px;
+border-radius: 5px;
+display: inline-block;     /* Ensure links are inline-block */
 }
 
 .pagination a:hover {
-    background-color: #ddd;
+background-color: #ddd;
 }
 
 .pagination a.active {
-    background-color: #4CAF50;
-    color: white;
-    border: 1px solid #4CAF50;
+background-color: #4CAF50;
+color: white;
+border: 1px solid #4CAF50;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+.pagination a {
+padding: 6px 12px;     /* Adjust padding for tablets */
+margin: 0 2px;         /* Adjust margin for tablets */
+}
+}
+
+@media (max-width: 480px) {
+.pagination a {
+padding: 4px 8px;      /* Adjust padding for mobile devices */
+margin: 0 1px;         /* Adjust margin for mobile devices */
+font-size: 14px;       /* Adjust font size for mobile devices */
+}
 }
