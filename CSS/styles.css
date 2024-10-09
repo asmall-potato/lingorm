@@ -152,7 +152,7 @@ font-size: 30px; /* Even smaller font size for mobile phones */
 .nav-toggle {
 display: block;
 }
-}
+
 
 nav ul {
 flex-direction: column;
