@@ -500,6 +500,11 @@
     // Initialize pagination on page load
     showPage(1);
     createPagination();
+
+            
+            document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('showing');
+            });
         </script>
         </body>
         </html>
