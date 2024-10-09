@@ -308,7 +308,7 @@ margin-top: 10px; /* Space between image and text */
 }
 
 .middle-text {
-flex: 2; /* Take up more space in the middle */
+  flex: 2; /* Take up more space in the middle */
 padding: 20px; /* Add padding for spacing */
 }
 
