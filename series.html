@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/series-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>LINGORM | SERIES</title>
+</head>
+<body>
+    <header class="header-wallpaper-sub">
+        <div class="header-container">
+            <h1 class="logo">LINGORM</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="series.html">Series</a>
+                        <div class="dropdown-content">
+                            <a href="TSOU.html">The Secret of Us</a>
+                            <a href="OnlyYou.html">Only You The Series</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="live-count.html">Live Count</a>
+                        <div class="dropdown-content">
+                            <a href="live-count/TSOU-live-count.html">The Secret of Us</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Fan Meeting</a>
+                        <div class="dropdown-content">
+                            <a href="fanmeeting/2024.html">2024</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="video.html">Video</a>
+                        <div class="dropdown-content">
+                            <a href="video-chisub.html">Video (中字)</a>
+                        </div>
+                    </li>
+                    <li><a href="magazine.html">Magazine</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="social-media.html">Social Media</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main>
+        <h2>Series</h2>
+        <div class="series-container">
+            <div class="column">
+                <h3>The Secret of Us</h3>
+                <a href="TSOU.html"> <!-- Updated link -->
+                    <img src="../lo web/Images/sub series/GQznTLrawAAvOak - Copy.jpg" alt="The Secret of Us">
+                </a>
+            </div>
+            <div class="column">
+                <h3>Only You The Series</h3>
+                <a href="OnlyYou.html"> <!-- Updated link -->
+                    <img src="../lo web/Images/sub series/GXP_xUFbgAAQuE7 - Copy.jpg" alt="Only You The Series">
+                </a>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LINGORM. All rights reserved.</p>
+        <p>Website developed and designed by 一粒马铃薯potato.</p>
+        <nav>
+        <ul>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Service</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        </nav>
+        </footer>
+        
+        <script>
+        // Scroll reveal effect
+        const sections = document.querySelectorAll('section');
+        const options = {
+        root: null,
+        threshold: 0.1,
+        };
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+        observer.unobserve(entry.target);
+        }
+        });
+        }, options);
+        
+        sections.forEach(section => {
+        observer.observe(section);
+        });
+        
+        // Change header transparency on scroll
+        const header = document.querySelector('.header-container');
+        window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        header.style.backgroundColor = scrollPosition > 50 ? 'rgba(255, 255, 255, 0.9)' : 'rgba(255, 255, 255, 0)';
+        });
+        </script>
+        </body>
+        </html>
+        

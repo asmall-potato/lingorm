@@ -1,0 +1,55 @@
+.general-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Space between awards */
+    padding: 20px; /* Adds some padding around the container */
+}
+
+.general-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px; /* Fixed width for consistency */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    background-color: #fff; /* Background color for visibility */
+    border-radius: 10px; /* Optional: adds rounded corners to the item */
+    overflow: hidden; /* Ensures that overflow content is hidden */
+   
+}
+
+h4 {
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.general-item img {
+    max-width: 100%; /* Ensures the image scales to fit the width of the container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto 20px auto; /* Centers the image and adds spacing at the bottom */
+    border-radius: 10px; /* Optional: adds rounded corners to the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+.instagram-media {
+    max-width: 100%; /* Ensure the Instagram embed takes up 100% of the container width */
+    height: 100%; /* Set it to fill the container's height */
+}
+
+.iframe {
+    display: block;
+    margin: 0 auto;  /* This centers block elements */
+  }
+
+  .embed-container {
+    width: 300px; /* Set the width to 300px */
+    height: 563.99px; /* Set the height to 563.99px */
+    overflow: hidden; /* Hide any overflow */
+}

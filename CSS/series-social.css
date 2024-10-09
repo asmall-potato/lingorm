@@ -1,0 +1,43 @@
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.series-container {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+}
+
+.column {
+    flex: 1; /* Allow each column to take equal space */
+    max-width: 300px; /* Set a maximum width for the columns */
+    text-align: center;
+    margin: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.column:hover {
+    transform: scale(1.05);
+}
+
+.column h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/sub-series.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>LINGORM | THE SECRET OF US</title>
+</head>
+<body>
+    <header class="header-wallpaper-sub-series">
+        <div class="header-container">
+            <h1 class="logo">LINGORM</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="series.html">Series</a>
+                        <div class="dropdown-content">
+                            <a href="TSOU.html">The Secret of Us</a>
+                            <a href="OnlyYou.html">Only You The Series</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="live-count.html">Live Count</a>
+                        <div class="dropdown-content">
+                            <a href="TSOU-live-count.html">The Secret of Us</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Fan Meeting</a>
+                        <div class="dropdown-content">
+                            <a href="FM2024.html">2024</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="video.html">Video</a>
+                        <div class="dropdown-content">
+                            <a href="video-chisub.html">Video (中字)</a>
+                        </div>
+                    </li>
+                    <li><a href="magazine.html">Magazine</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="social-media.html">Social Media</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bottom-right-text-sub">
+            <h1>THE SECRET OF US</h1>
+        </div>
+        <div class="bottom-right-text-sub">
+            <p>DOCTOR x ACTRESS</p>
+        </div>
+    </header>
+
+    <main>
+        
+    
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <h2>ABOUT THE SECRET OF US</h2>
+            <p>"The Secret of Us" is Ch3 Thailand first GL series, starring by LingLing Kwong and Orm Kornnaphat. </br>
+                ​The series is adapted from the novel "The Secret of Us" written by Meenam.</p>
+        </section>
+    
+        <!-- YouTube Section -->
+        <section class="video-section">
+            <h2>Watch the Trailer</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UvIsfte-G-4?si=-jA_zgzFH7J2U7CY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    
+        <!-- Watch Now Section -->
+        <section class="watch-section">
+            <h2>Watch the Series</h2>
+            <p>Available on:</p>
+            <a href="https://ch3plus.com/drama/1601" class="watch-link">3PLUS</a>
+            <a href="https://youtube.com/playlist?list=PLDIqVRSvaz9LWu6pvDkNa43Zpicq-zLaL&si=deuvlgQtiAkby2J9" class="watch-link">YOUTUBE</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LINGORM. All rights reserved.</p>
+        <p>Website developed and designed by 一粒马铃薯potato.</p>
+        <nav>
+        <ul>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Service</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        </nav>
+        </footer>
+        
+        <script>
+        // Scroll reveal effect
+        const sections = document.querySelectorAll('section');
+        const options = {
+        root: null,
+        threshold: 0.1,
+        };
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+        observer.unobserve(entry.target);
+        }
+        });
+        }, options);
+        
+        sections.forEach(section => {
+        observer.observe(section);
+        });
+        
+        // Change header transparency on scroll
+        const header = document.querySelector('.header-container');
+        window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        header.style.backgroundColor = scrollPosition > 50 ? 'rgba(255, 255, 255, 0.9)' : 'rgba(255, 255, 255, 0)';
+        });
+        </script>
+        </body>
+        </html>
