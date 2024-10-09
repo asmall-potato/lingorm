@@ -136,21 +136,17 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-    .left-image, .right-image, .middle-text {
-        flex: 100%; /* Allow them to take full width */
-    }
-}
-
 @media (max-width: 480px) {
     .bottom-left-text {
         font-size: 5vw; /* Adjust font size for smaller screens */
     }
 }
 
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
 
 /*
 .scroll-reveal {
@@ -490,4 +486,12 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 8px 0; /* Reduce padding on smaller screens */
+        font-size: 0.9em; /* Slightly smaller font size */
+    }
 }
