@@ -3,6 +3,12 @@ margin: 0;
 font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 480px) {
+body {
+zoom: 0.5; /* Adjust zoom level to 50% */
+}
+}
+
 .header-wallpaper {
 position: relative;
 width: 100%;
