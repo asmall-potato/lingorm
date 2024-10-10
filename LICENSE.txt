@@ -1,4 +1,4 @@
-Custom License for lingorm.github.io
+Custom License for https://asmall-potato.github.io/lingorm/
 
 Version 1.0
 
@@ -14,7 +14,7 @@ Version 1.0
 
 5. Acceptance of Terms By using this code, you agree to abide by the terms outlined in this license.
 
-lingorm.github.io 自定义许可证
+https://asmall-potato.github.io/lingorm/ 自定义许可证
 
 版本 1.0
 
