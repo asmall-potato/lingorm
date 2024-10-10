@@ -311,10 +311,16 @@
                 notificationContainer.innerHTML = data;
                 document.body.appendChild(notificationContainer);
                 const notification = document.getElementById('notification');
-                notification.style.display = 'block';
+                
+                // Show notification with fade-in effect
+                notification.classList.add('show');
+                
                 setTimeout(() => {
-                    notification.style.display = 'none';
-                 }, 60000); // Hide after 60 seconds (1 minute)
+                    notification.classList.remove('show'); // Fade out
+                    setTimeout(() => {
+                        notification.style.display = 'none'; // Remove from DOM after fading out
+                    }, 500); // Wait for fade-out duration
+                }, 60000); // Hide after 60 seconds
             });
     };
 
