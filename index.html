@@ -301,6 +301,23 @@
         document.querySelector('.nav-toggle').addEventListener('click', function() {
         document.querySelector('nav ul').classList.toggle('showing');
         });
+
+            
+    window.onload = function() {
+        const notificationContainer = document.createElement('div');
+        fetch('notification.html')
+            .then(response => response.text())
+            .then(data => {
+                notificationContainer.innerHTML = data;
+                document.body.appendChild(notificationContainer);
+                const notification = document.getElementById('notification');
+                notification.style.display = 'block';
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 5000); // Hide after 5 seconds
+            });
+    };
+
         </script>
         </body>
         </html>
