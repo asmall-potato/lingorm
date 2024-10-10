@@ -514,6 +514,17 @@ transition: background-color 0.3s; /* Smooth background change */
 background-color: #555; /* Darken background on hover */
 }
 
+.google_translate_element {
+            position: fixed;
+            bottom: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            z-index: 1000; /* Ensure it is on top of other elements */
+            background-color: white; /* Optional: background for better visibility */
+            padding: 10px; /* Optional: padding for better appearance */
+            border: 1px solid #ccc; /* Optional: border for better appearance */
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+
 footer {
 background: #333;
 color: #fff;
