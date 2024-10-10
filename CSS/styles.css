@@ -514,7 +514,7 @@ transition: background-color 0.3s; /* Smooth background change */
 background-color: #555; /* Darken background on hover */
 }
 
-.google_translate_element {
+#google_translate_element {
             position: fixed;
             bottom: 20px; /* Distance from the bottom */
             right: 20px; /* Distance from the right */
